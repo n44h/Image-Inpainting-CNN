@@ -1,0 +1,25 @@
+{
+  "train_dataset_path": ["datasets", "training"],
+  "eval_dataset_path": ["datasets", "validation"],
+  "test_dataset_path": ["datasets", "test", "inputs.pkl"],
+  "pkl_dir_path": "pkl",
+  "saved_models_path": "saved_models",
+  "results_path": "results",
+  "log_path": "logs",
+
+  "training_config": {
+    "batch_size": 100,
+    "num_epochs": 10000,
+    "loss_function": "MSE",
+    "optimizer": "ADAM",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-5
+  },
+
+  "network_config": {
+    "num_input_channels": 4,
+    "num_hidden_layers": 5,
+    "num_kernels": 64,
+    "kernel_size": 5
+  }
+}
